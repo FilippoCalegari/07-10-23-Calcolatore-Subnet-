@@ -108,9 +108,10 @@
             this.lbl_IndirizzoBase.AutoSize = true;
             this.lbl_IndirizzoBase.Location = new System.Drawing.Point(315, 32);
             this.lbl_IndirizzoBase.Name = "lbl_IndirizzoBase";
-            this.lbl_IndirizzoBase.Size = new System.Drawing.Size(80, 13);
+            this.lbl_IndirizzoBase.Size = new System.Drawing.Size(83, 13);
             this.lbl_IndirizzoBase.TabIndex = 6;
-            this.lbl_IndirizzoBase.Text = "Indirizzo di rete:";
+            this.lbl_IndirizzoBase.Text = "Indirizzo privato:";
+            this.lbl_IndirizzoBase.Click += new System.EventHandler(this.lbl_IndirizzoBase_Click);
             // 
             // lbl_Subnet
             // 

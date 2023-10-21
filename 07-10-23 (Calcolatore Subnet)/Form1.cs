@@ -12,6 +12,24 @@ namespace _07_10_23__Calcolatore_Subnet_
 {
     public partial class Form1 : Form
     {
+        public int esponente;
+        public void CalcoloSubnet()
+        {
+            int subnet;
+
+            if (txtb_Class.Text == "Classe C")
+            {
+                
+            }
+            else if (txtb_Class.Text == "Classe B")
+            {
+
+            }
+            else if (txtb_Class.Text == "Classe A")
+            {
+
+            }
+        }
         public Form1()
         {
             InitializeComponent();
@@ -39,6 +57,8 @@ namespace _07_10_23__Calcolatore_Subnet_
 
         private void btn_Calcolare_Click(object sender, EventArgs e)
         {
+            esponente = (int)(Math.Log(int.Parse(txtb_NumHost.Text) + 2, 2) + Math.Log(int.Parse(txtb_NumSottoreti.Text) + 2, 2));
+
             if (Math.Log(int.Parse(txtb_NumHost.Text) + 2, 2) + Math.Log(int.Parse(txtb_NumSottoreti.Text) + 2, 2) <= 8)
             {
                 txtb_Class.Text = "Classe C";
@@ -58,6 +78,11 @@ namespace _07_10_23__Calcolatore_Subnet_
             {
                 MessageBox.Show("Un po' meno.");
             }
+        }
+
+        private void lbl_IndirizzoBase_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
