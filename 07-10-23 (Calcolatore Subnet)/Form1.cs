@@ -15,11 +15,16 @@ namespace _07_10_23__Calcolatore_Subnet_
         public int esponente;
         public void CalcoloSubnet()
         {
-            int subnet;
+            int subnet = 0;
 
             if (txtb_Class.Text == "Classe C")
             {
-                
+                for (int i = 7; i >= esponente ; i--)
+                {
+                    //subnet += int.Parse(Math.Pow(2, i));
+                }
+
+                txtb_Subnet.Text = "255.255.255." + (128 + 
             }
             else if (txtb_Class.Text == "Classe B")
             {
