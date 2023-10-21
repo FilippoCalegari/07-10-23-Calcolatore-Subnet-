@@ -28,234 +28,231 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.listBox3 = new System.Windows.Forms.ListBox();
-            this.listBox4 = new System.Windows.Forms.ListBox();
-            this.listBox5 = new System.Windows.Forms.ListBox();
-            this.listBox6 = new System.Windows.Forms.ListBox();
-            this.listBox7 = new System.Windows.Forms.ListBox();
-            this.listBox8 = new System.Windows.Forms.ListBox();
+            this.lbl_NumHost = new System.Windows.Forms.Label();
+            this.txtb_NumHost = new System.Windows.Forms.TextBox();
+            this.lbl_NumSottoreti = new System.Windows.Forms.Label();
+            this.txtb_NumSottoreti = new System.Windows.Forms.TextBox();
+            this.btn_Calcolare = new System.Windows.Forms.Button();
+            this.lbl_Class = new System.Windows.Forms.Label();
+            this.lbl_IndirizzoBase = new System.Windows.Forms.Label();
+            this.lbl_Subnet = new System.Windows.Forms.Label();
+            this.lbl_CIDR = new System.Windows.Forms.Label();
+            this.txtb_Class = new System.Windows.Forms.TextBox();
+            this.txtb_IndirizzoBase = new System.Windows.Forms.TextBox();
+            this.txtb_Subnet = new System.Windows.Forms.TextBox();
+            this.lb_Broadcast = new System.Windows.Forms.ListBox();
+            this.lbl_UltimoHost = new System.Windows.Forms.Label();
+            this.lb_UltimoHost = new System.Windows.Forms.ListBox();
+            this.lbl_PrimoHost = new System.Windows.Forms.Label();
+            this.lb_DG = new System.Windows.Forms.ListBox();
+            this.lb_PrimoHost = new System.Windows.Forms.ListBox();
+            this.txtb_CIDR = new System.Windows.Forms.TextBox();
+            this.lbl_DG = new System.Windows.Forms.Label();
+            this.lbl_Broadcast = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // lbl_NumHost
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Numero host possibili:";
+            this.lbl_NumHost.AutoSize = true;
+            this.lbl_NumHost.Location = new System.Drawing.Point(9, 9);
+            this.lbl_NumHost.Name = "lbl_NumHost";
+            this.lbl_NumHost.Size = new System.Drawing.Size(109, 13);
+            this.lbl_NumHost.TabIndex = 0;
+            this.lbl_NumHost.Text = "Numero host possibili:";
             // 
-            // textBox1
+            // txtb_NumHost
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 25);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(123, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtb_NumHost.Location = new System.Drawing.Point(12, 25);
+            this.txtb_NumHost.Name = "txtb_NumHost";
+            this.txtb_NumHost.Size = new System.Drawing.Size(123, 20);
+            this.txtb_NumHost.TabIndex = 1;
+            this.txtb_NumHost.TextChanged += new System.EventHandler(this.txtb_NumHost_TextChanged);
             // 
-            // label2
+            // lbl_NumSottoreti
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 48);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(126, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Numero sottoreti possibili:";
+            this.lbl_NumSottoreti.AutoSize = true;
+            this.lbl_NumSottoreti.Location = new System.Drawing.Point(9, 48);
+            this.lbl_NumSottoreti.Name = "lbl_NumSottoreti";
+            this.lbl_NumSottoreti.Size = new System.Drawing.Size(126, 13);
+            this.lbl_NumSottoreti.TabIndex = 2;
+            this.lbl_NumSottoreti.Text = "Numero sottoreti possibili:";
             // 
-            // textBox2
+            // txtb_NumSottoreti
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 64);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(123, 20);
-            this.textBox2.TabIndex = 3;
+            this.txtb_NumSottoreti.Location = new System.Drawing.Point(12, 64);
+            this.txtb_NumSottoreti.Name = "txtb_NumSottoreti";
+            this.txtb_NumSottoreti.Size = new System.Drawing.Size(123, 20);
+            this.txtb_NumSottoreti.TabIndex = 3;
             // 
-            // button1
+            // btn_Calcolare
             // 
-            this.button1.Location = new System.Drawing.Point(141, 9);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 75);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Clicca per calcolare";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_Calcolare.Location = new System.Drawing.Point(141, 9);
+            this.btn_Calcolare.Name = "btn_Calcolare";
+            this.btn_Calcolare.Size = new System.Drawing.Size(75, 75);
+            this.btn_Calcolare.TabIndex = 4;
+            this.btn_Calcolare.Text = "Clicca per calcolare";
+            this.btn_Calcolare.UseVisualStyleBackColor = true;
+            this.btn_Calcolare.Click += new System.EventHandler(this.btn_Calcolare_Click);
             // 
-            // label3
+            // lbl_Class
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(219, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Classe della rete:";
+            this.lbl_Class.AutoSize = true;
+            this.lbl_Class.Location = new System.Drawing.Point(222, 32);
+            this.lbl_Class.Name = "lbl_Class";
+            this.lbl_Class.Size = new System.Drawing.Size(87, 13);
+            this.lbl_Class.TabIndex = 5;
+            this.lbl_Class.Text = "Classe della rete:";
             // 
-            // label4
+            // lbl_IndirizzoBase
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(312, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 13);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Indirizzo di rete:";
+            this.lbl_IndirizzoBase.AutoSize = true;
+            this.lbl_IndirizzoBase.Location = new System.Drawing.Point(315, 32);
+            this.lbl_IndirizzoBase.Name = "lbl_IndirizzoBase";
+            this.lbl_IndirizzoBase.Size = new System.Drawing.Size(80, 13);
+            this.lbl_IndirizzoBase.TabIndex = 6;
+            this.lbl_IndirizzoBase.Text = "Indirizzo di rete:";
             // 
-            // label5
+            // lbl_Subnet
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(405, 9);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 13);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Primo Host:";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.lbl_Subnet.AutoSize = true;
+            this.lbl_Subnet.Location = new System.Drawing.Point(405, 32);
+            this.lbl_Subnet.Name = "lbl_Subnet";
+            this.lbl_Subnet.Size = new System.Drawing.Size(44, 13);
+            this.lbl_Subnet.TabIndex = 11;
+            this.lbl_Subnet.Text = "Subnet:";
             // 
-            // label6
+            // lbl_CIDR
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(498, 9);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 13);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Ultimo Host:";
+            this.lbl_CIDR.AutoSize = true;
+            this.lbl_CIDR.Location = new System.Drawing.Point(495, 32);
+            this.lbl_CIDR.Name = "lbl_CIDR";
+            this.lbl_CIDR.Size = new System.Drawing.Size(36, 13);
+            this.lbl_CIDR.TabIndex = 12;
+            this.lbl_CIDR.Text = "CIDR:";
             // 
-            // label7
+            // txtb_Class
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(591, 9);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(89, 13);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "Default Gateway:";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+            this.txtb_Class.Location = new System.Drawing.Point(225, 48);
+            this.txtb_Class.Name = "txtb_Class";
+            this.txtb_Class.Size = new System.Drawing.Size(84, 20);
+            this.txtb_Class.TabIndex = 29;
             // 
-            // label8
+            // txtb_IndirizzoBase
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(684, 9);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(58, 13);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "Broadcast:";
+            this.txtb_IndirizzoBase.Location = new System.Drawing.Point(318, 48);
+            this.txtb_IndirizzoBase.Name = "txtb_IndirizzoBase";
+            this.txtb_IndirizzoBase.Size = new System.Drawing.Size(84, 20);
+            this.txtb_IndirizzoBase.TabIndex = 30;
             // 
-            // label9
+            // txtb_Subnet
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(777, 9);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(44, 13);
-            this.label9.TabIndex = 11;
-            this.label9.Text = "Subnet:";
+            this.txtb_Subnet.Location = new System.Drawing.Point(408, 48);
+            this.txtb_Subnet.Name = "txtb_Subnet";
+            this.txtb_Subnet.Size = new System.Drawing.Size(84, 20);
+            this.txtb_Subnet.TabIndex = 31;
             // 
-            // label10
+            // lb_Broadcast
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(870, 9);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(36, 13);
-            this.label10.TabIndex = 12;
-            this.label10.Text = "CIDR:";
+            this.lb_Broadcast.FormattingEnabled = true;
+            this.lb_Broadcast.Location = new System.Drawing.Point(867, 25);
+            this.lb_Broadcast.Name = "lb_Broadcast";
+            this.lb_Broadcast.Size = new System.Drawing.Size(87, 56);
+            this.lb_Broadcast.TabIndex = 28;
             // 
-            // listBox1
+            // lbl_UltimoHost
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(222, 25);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(87, 56);
-            this.listBox1.TabIndex = 21;
+            this.lbl_UltimoHost.AutoSize = true;
+            this.lbl_UltimoHost.Location = new System.Drawing.Point(678, 9);
+            this.lbl_UltimoHost.Name = "lbl_UltimoHost";
+            this.lbl_UltimoHost.Size = new System.Drawing.Size(62, 13);
+            this.lbl_UltimoHost.TabIndex = 10;
+            this.lbl_UltimoHost.Text = "Ultimo host:";
             // 
-            // listBox2
+            // lb_UltimoHost
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(315, 25);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(87, 56);
-            this.listBox2.TabIndex = 22;
+            this.lb_UltimoHost.FormattingEnabled = true;
+            this.lb_UltimoHost.Location = new System.Drawing.Point(681, 25);
+            this.lb_UltimoHost.Name = "lb_UltimoHost";
+            this.lb_UltimoHost.Size = new System.Drawing.Size(87, 56);
+            this.lb_UltimoHost.TabIndex = 26;
             // 
-            // listBox3
+            // lbl_PrimoHost
             // 
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.Location = new System.Drawing.Point(408, 25);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(87, 56);
-            this.listBox3.TabIndex = 23;
+            this.lbl_PrimoHost.AutoSize = true;
+            this.lbl_PrimoHost.Location = new System.Drawing.Point(586, 9);
+            this.lbl_PrimoHost.Name = "lbl_PrimoHost";
+            this.lbl_PrimoHost.Size = new System.Drawing.Size(59, 13);
+            this.lbl_PrimoHost.TabIndex = 9;
+            this.lbl_PrimoHost.Text = "Primo host:";
+            this.lbl_PrimoHost.Click += new System.EventHandler(this.label7_Click);
             // 
-            // listBox4
+            // lb_DG
             // 
-            this.listBox4.FormattingEnabled = true;
-            this.listBox4.Location = new System.Drawing.Point(501, 25);
-            this.listBox4.Name = "listBox4";
-            this.listBox4.Size = new System.Drawing.Size(87, 56);
-            this.listBox4.TabIndex = 24;
+            this.lb_DG.FormattingEnabled = true;
+            this.lb_DG.Location = new System.Drawing.Point(774, 25);
+            this.lb_DG.Name = "lb_DG";
+            this.lb_DG.Size = new System.Drawing.Size(87, 56);
+            this.lb_DG.TabIndex = 25;
             // 
-            // listBox5
+            // lb_PrimoHost
             // 
-            this.listBox5.FormattingEnabled = true;
-            this.listBox5.Location = new System.Drawing.Point(594, 25);
-            this.listBox5.Name = "listBox5";
-            this.listBox5.Size = new System.Drawing.Size(87, 56);
-            this.listBox5.TabIndex = 25;
+            this.lb_PrimoHost.FormattingEnabled = true;
+            this.lb_PrimoHost.Location = new System.Drawing.Point(588, 25);
+            this.lb_PrimoHost.Name = "lb_PrimoHost";
+            this.lb_PrimoHost.Size = new System.Drawing.Size(87, 56);
+            this.lb_PrimoHost.TabIndex = 27;
             // 
-            // listBox6
+            // txtb_CIDR
             // 
-            this.listBox6.FormattingEnabled = true;
-            this.listBox6.Location = new System.Drawing.Point(687, 25);
-            this.listBox6.Name = "listBox6";
-            this.listBox6.Size = new System.Drawing.Size(87, 56);
-            this.listBox6.TabIndex = 26;
+            this.txtb_CIDR.Location = new System.Drawing.Point(498, 48);
+            this.txtb_CIDR.Name = "txtb_CIDR";
+            this.txtb_CIDR.Size = new System.Drawing.Size(84, 20);
+            this.txtb_CIDR.TabIndex = 32;
             // 
-            // listBox7
+            // lbl_DG
             // 
-            this.listBox7.FormattingEnabled = true;
-            this.listBox7.Location = new System.Drawing.Point(780, 25);
-            this.listBox7.Name = "listBox7";
-            this.listBox7.Size = new System.Drawing.Size(87, 56);
-            this.listBox7.TabIndex = 27;
+            this.lbl_DG.AutoSize = true;
+            this.lbl_DG.Location = new System.Drawing.Point(771, 9);
+            this.lbl_DG.Name = "lbl_DG";
+            this.lbl_DG.Size = new System.Drawing.Size(26, 13);
+            this.lbl_DG.TabIndex = 33;
+            this.lbl_DG.Text = "DG:";
             // 
-            // listBox8
+            // lbl_Broadcast
             // 
-            this.listBox8.FormattingEnabled = true;
-            this.listBox8.Location = new System.Drawing.Point(873, 25);
-            this.listBox8.Name = "listBox8";
-            this.listBox8.Size = new System.Drawing.Size(87, 56);
-            this.listBox8.TabIndex = 28;
+            this.lbl_Broadcast.AutoSize = true;
+            this.lbl_Broadcast.Location = new System.Drawing.Point(864, 9);
+            this.lbl_Broadcast.Name = "lbl_Broadcast";
+            this.lbl_Broadcast.Size = new System.Drawing.Size(58, 13);
+            this.lbl_Broadcast.TabIndex = 34;
+            this.lbl_Broadcast.Text = "Broadcast:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(974, 450);
-            this.Controls.Add(this.listBox8);
-            this.Controls.Add(this.listBox7);
-            this.Controls.Add(this.listBox6);
-            this.Controls.Add(this.listBox5);
-            this.Controls.Add(this.listBox4);
-            this.Controls.Add(this.listBox3);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(1054, 450);
+            this.Controls.Add(this.lbl_Broadcast);
+            this.Controls.Add(this.lbl_DG);
+            this.Controls.Add(this.txtb_CIDR);
+            this.Controls.Add(this.txtb_Subnet);
+            this.Controls.Add(this.txtb_IndirizzoBase);
+            this.Controls.Add(this.txtb_Class);
+            this.Controls.Add(this.lb_Broadcast);
+            this.Controls.Add(this.lb_PrimoHost);
+            this.Controls.Add(this.lb_UltimoHost);
+            this.Controls.Add(this.lb_DG);
+            this.Controls.Add(this.lbl_CIDR);
+            this.Controls.Add(this.lbl_Subnet);
+            this.Controls.Add(this.lbl_UltimoHost);
+            this.Controls.Add(this.lbl_PrimoHost);
+            this.Controls.Add(this.lbl_IndirizzoBase);
+            this.Controls.Add(this.lbl_Class);
+            this.Controls.Add(this.btn_Calcolare);
+            this.Controls.Add(this.txtb_NumSottoreti);
+            this.Controls.Add(this.lbl_NumSottoreti);
+            this.Controls.Add(this.txtb_NumHost);
+            this.Controls.Add(this.lbl_NumHost);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -266,27 +263,27 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.ListBox listBox3;
-        private System.Windows.Forms.ListBox listBox4;
-        private System.Windows.Forms.ListBox listBox5;
-        private System.Windows.Forms.ListBox listBox6;
-        private System.Windows.Forms.ListBox listBox7;
-        private System.Windows.Forms.ListBox listBox8;
+        private System.Windows.Forms.Label lbl_NumHost;
+        private System.Windows.Forms.TextBox txtb_NumHost;
+        private System.Windows.Forms.Label lbl_NumSottoreti;
+        private System.Windows.Forms.TextBox txtb_NumSottoreti;
+        private System.Windows.Forms.Button btn_Calcolare;
+        private System.Windows.Forms.Label lbl_Class;
+        private System.Windows.Forms.Label lbl_IndirizzoBase;
+        private System.Windows.Forms.Label lbl_Subnet;
+        private System.Windows.Forms.Label lbl_CIDR;
+        private System.Windows.Forms.TextBox txtb_Class;
+        private System.Windows.Forms.TextBox txtb_IndirizzoBase;
+        private System.Windows.Forms.TextBox txtb_Subnet;
+        private System.Windows.Forms.ListBox lb_Broadcast;
+        private System.Windows.Forms.Label lbl_UltimoHost;
+        private System.Windows.Forms.ListBox lb_UltimoHost;
+        private System.Windows.Forms.Label lbl_PrimoHost;
+        private System.Windows.Forms.ListBox lb_DG;
+        private System.Windows.Forms.ListBox lb_PrimoHost;
+        private System.Windows.Forms.TextBox txtb_CIDR;
+        private System.Windows.Forms.Label lbl_DG;
+        private System.Windows.Forms.Label lbl_Broadcast;
     }
 }
 
