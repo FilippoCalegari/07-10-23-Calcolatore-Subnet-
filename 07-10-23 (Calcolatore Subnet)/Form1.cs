@@ -12,7 +12,8 @@ namespace _07_10_23__Calcolatore_Subnet_
 {
     public partial class Form1 : Form
     {
-        public int esponente;
+        public int esponente1;
+        public int esponenteFinale;
         public void CalcoloSubnet()
         {
             double subnet = 0;
@@ -54,7 +55,6 @@ namespace _07_10_23__Calcolatore_Subnet_
 
                     txtb_Subnet.Text = "255.255." + (subnet) + ".0";
                 }
-                
             }
             else if (txtb_Class.Text == "Classe A")
             {
@@ -88,7 +88,8 @@ namespace _07_10_23__Calcolatore_Subnet_
 
         private void btn_Calcolare_Click(object sender, EventArgs e)
         {
-            esponente = (int)(Math.Log(int.Parse(txtb_NumSottoreti.Text) + 2, 2));
+            esponente1 = (int)(Math.Log(int.Parse(txtb_NumHost.Text) + 2, 2) + Math.Log(int.Parse(txtb_NumSottoreti.Text) + 2, 2));
+            
 
             if (Math.Log(int.Parse(txtb_NumHost.Text) + 2, 2) + Math.Log(int.Parse(txtb_NumSottoreti.Text) + 2, 2) <= 8)
             {
